@@ -24,5 +24,4 @@ const props = defineProps([
     height: 100%;
     grid-row: 3;
 }
-
 </style>
