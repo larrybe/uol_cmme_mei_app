@@ -10,8 +10,13 @@ export function convert(fileInput, setDwnFunc) {
         }
     }, "async").then(e => {
         let filename = fileInput.file.name;
-        filename = filename.split(".");
-        filename = filename[0] + ".mei"
+        let extIndex = filename.indexOf('.cmme.xml')
+        if (extIndex > -1){
+            filename = filename.slice(0, extIndex);
+        } else {
+            filename = filename.split(".")[0];
+        }
+        filename = filename + ".mei"
         let file = new File([e.principalResult],
             filename, { type: 'text/xml' }
         )
