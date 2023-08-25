@@ -5,15 +5,18 @@ const props = defineProps([
 </script>
 
 <template>
-    <div id="convertComp" v-if="props.fileInput.file">
-        <p>{{ props.fileInput.file.name }}</p>
-        <button id="transformBtn" @click="props.convert(props.fileInput, props.setFileDownload)">Convert</button>
+    <div id="convertComp" class="flex" v-if="props.fileInput.file">
+        <p>Click the CONVERT button to convert your CMME XML file to MEI</p>
+        <p class="filename">{{ props.fileInput.file.name }}</p>
+        <button id="convertBtn" class="btn" @click="props.convert(props.fileInput, props.setFileDownload)">Convert</button>
     </div>
 </template>
 
 <style>
 #convertComp{
     box-sizing: border-box;
-    outline: 2px solid firebrick;
+    border-top: 2px solid var(--color-border)
+    /* outline: 2px solid firebrick; */
 }
+
 </style>
