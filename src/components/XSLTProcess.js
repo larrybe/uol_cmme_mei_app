@@ -1,4 +1,4 @@
-export function convert(fileInput, setDwnFunc) {
+export function convert(fileInput, setDwnFunc, setErrorState) {
     SaxonJS.transform({
         stylesheetLocation: "/cmme_to_mei.sef.json",
         sourceNode: fileInput.xml,
@@ -23,5 +23,7 @@ export function convert(fileInput, setDwnFunc) {
         let url = URL.createObjectURL(file)
 
         setDwnFunc({name: file.name, url:url});
+    }).catch(e => {
+        setErrorState(e, "transformation")
     });
 }

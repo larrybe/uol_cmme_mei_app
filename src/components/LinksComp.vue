@@ -1,7 +1,7 @@
 <template>
     <div id="linksComp" class="flex">
-        <p>View the XSL file is <a href="https://github.com/larrybe/uol_cmme_mei_xsl">on github</a></p>
-        <p>View the code for this web app <a href="https://github.com/larrybe/uol_cmme_mei_app">on github</a></p>
+        <p>The XSL file for this app is <a href="https://github.com/larrybe/uol_cmme_mei_xsl" target="_blank" rel="noreferrer">on GitHub</a> and so is <a href="https://github.com/larrybe/uol_cmme_mei_app" target="_blank" rel="noreferrer">this app's code</a></p>
+        <p>CMME files are available at the <a href="https://cmme.org/database" target="_blank" rel="noreferrer">CMME Repository</a> or <a href="https://github.com/tdumitrescu/cmme-music" target="_blank" rel="noreferrer">GitHub</a></p>
     </div>
 </template>
 

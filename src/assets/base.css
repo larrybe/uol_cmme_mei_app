@@ -38,6 +38,8 @@
 
   --color-link: var(--c-text-link-light);
 
+  --color-error: rgb(245, 22, 78);
+
   --section-gap: 160px;
 
   --serif-font: Georgia, 'Times New Roman', Times, serif;

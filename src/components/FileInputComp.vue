@@ -1,6 +1,6 @@
 <script setup>
 const props = defineProps([
-    'fileInputFunc', 'setFileInput', 'clearDownload'
+    'fileInputFunc', 'setFileInput', 'clearDownload', 'setErrorState'
 ]);
 </script>
 
@@ -11,7 +11,7 @@ const props = defineProps([
             <p>Or click the Upload button below for a file upload dialog box</p>
             <button id="uploadBtn" class="btn" @click="this.$refs.uploadInput.click()">Upload</button>
             <input id="uploadInput" ref="uploadInput" type="file"
-                @change="props.fileInputFunc(props.setFileInput, props.clearDownload, $event)" v-show="false" />
+                @change="props.fileInputFunc(props.setFileInput, props.clearDownload, props.setErrorState, $event)" v-show="false" />
         </div>
     </div>
 </template>

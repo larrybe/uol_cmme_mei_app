@@ -3,6 +3,7 @@
     import LinksComp from './LinksComp.vue';
     import FileInputComp from './FileInputComp.vue';
     import ConvertComp from './ConvertComp.vue';
+    import ErrorComp from './ErrorComp.vue';
     import DownloadComp from './DownloadComp.vue';
     import { ref } from 'vue';
 
@@ -12,10 +13,13 @@
     defineProps({
         fileInput: Object,
         fileDownload: Object,
+        errorState: Object,
+        errorType: Object,
         fileInputFunc: Function,
         setFileInput: Function,
         setFileDownload: Function,
         clearDownload: Function,
+        setErrorState: Function,
         convert: Function
     })
 
@@ -23,6 +27,8 @@
 
     let fileInput = ref({});
     let fileDownload = ref({});
+    let errorState = ref(false);
+    let errorType = ref(false);
     
 
     function setFileInput(val){
@@ -36,14 +42,20 @@
     function clearDownload(){
         fileDownload.value = {};
     }
+
+    function setErrorState(err, type){
+        errorState.value = err;
+        errorType.value = type;
+    }
 </script>
 
 <template>
-    <div id='container' @drop.stop.prevent="handleDrop(setFileInput, clearDownload, $event); dragState=false" :class="{drag: dragState, nodrag: !dragState}" @dragover.prevent="dragState=true" @dragend="dragState=false" @dragleave="dragState=false">
+    <div id='container' @drop.stop.prevent="handleDrop(setFileInput, clearDownload, setErrorState, $event); dragState=false" :class="{drag: dragState, nodrag: !dragState}" @dragover.prevent="dragState=true" @dragend="dragState=false" @dragleave="dragState=false">
         <HeaderComp />
         <LinksComp />
-        <FileInputComp :fileInputFunc="handleFileInput" :setFileInput="setFileInput" :clearDownload="clearDownload" />
-        <ConvertComp :fileInput="fileInput" :convert="convert" :setFileDownload="setFileDownload" />
+        <FileInputComp :fileInputFunc="handleFileInput" :setFileInput="setFileInput" :clearDownload="clearDownload" :setErrorState="setErrorState" />
+        <ConvertComp :fileInput="fileInput" :convert="convert" :setFileDownload="setFileDownload" :setErrorState="setErrorState" />
+        <ErrorComp :errorState="errorState" :errorType="errorType" />
         <DownloadComp :fileDownload="fileDownload" />
     </div>
 </template>

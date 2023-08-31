@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "xslt": "xslt3 -xsl:xslt/cmme_to_mei.xsl -export:public/cmme_to_mei.sef.json -t -ns:##html5"
+    "xslt": "xslt3 -xsl:xslt/cmme_to_mei.xsl -export:public/cmme_to_mei.sef.json -t -nogo -ns:##html5"
   },
   "dependencies": {
     "vue": "^3.3.4"

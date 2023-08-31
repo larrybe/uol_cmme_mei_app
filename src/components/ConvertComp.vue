@@ -1,6 +1,6 @@
 <script setup>
 const props = defineProps([
-    "fileInput", "convert", "setFileDownload"
+    "fileInput", "convert", "setFileDownload", "setErrorState"
     ]);
 </script>
 
@@ -8,7 +8,7 @@ const props = defineProps([
     <div id="convertComp" class="flex" v-if="props.fileInput.file">
         <p>Click the CONVERT button to convert the CMME XML file</p>
         <p class="filename">{{ props.fileInput.file.name }}</p>
-        <button id="convertBtn" class="btn" @click="props.convert(props.fileInput, props.setFileDownload)">Convert</button>
+        <button id="convertBtn" class="btn" @click="props.convert(props.fileInput, props.setFileDownload, props.setErrorState)">Convert</button>
     </div>
 </template>
 
