@@ -2,6 +2,10 @@
 const props = defineProps([
     'fileInputFunc', 'setFileInput', 'clearDownload', 'setErrorState'
 ]);
+
+function uploadBtnClick(){
+    document.querySelector("#uploadInput").click();
+}
 </script>
 
 <template>
@@ -9,7 +13,7 @@ const props = defineProps([
         <div>
             <p>Drag and drop the cmme.xml file you want to convert into this window</p>
             <p>Or click the Upload button below for a file upload dialog box</p>
-            <button id="uploadBtn" class="btn" @click="this.$refs.uploadInput.click()">Upload</button>
+            <button id="uploadBtn" class="btn" @click="uploadBtnClick">Upload</button>
             <input id="uploadInput" ref="uploadInput" type="file"
                 @change="props.fileInputFunc(props.setFileInput, props.clearDownload, props.setErrorState, $event)" v-show="false" />
         </div>
