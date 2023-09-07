@@ -1,6 +1,6 @@
 export function convert(fileInput, setDwnFunc, setErrorState) {
     SaxonJS.transform({
-        stylesheetLocation: "/cmme_to_mei.sef.json",
+        stylesheetLocation: "cmme_to_mei.sef.json",
         sourceNode: fileInput.xml,
         destination: "serialized",
         outputProperties: {
