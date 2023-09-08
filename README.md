@@ -1,14 +1,11 @@
-# uol_cmme_mei_app
+# CMME to MEI File Converter
 
-This template should help get you started developing with Vue 3 in Vite.
+An application to convert a CMME XML file to MEI.
 
-## Recommended IDE Setup
+## XSL File
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+The XSL file used in the conversion is avaliable in the xslt [directory](https://github.com/larrybe/uol_cmme_mei_app/tree/master/xslt) or at the [repository](https://github.com/larrybe/uol_cmme_mei_xsl).
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
@@ -20,6 +17,12 @@ npm install
 
 ```sh
 npm run dev
+```
+
+### Compile the XSL into an SEF file
+
+```sh
+npm run xslt
 ```
 
 ### Compile and Minify for Production

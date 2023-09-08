@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-Mensural.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-Mensural.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Magnificat secundi toni</title>
+            <composer>Anonymous</composer>
+            <editor>Theodor Dumitrescu</editor>
+            <respStmt>
+               <resp>Originally encoded by</resp>
+               <corpName role="encoder">The CMME Project</corpName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt/>
+         <sourceDesc>
+            <source>
+               <bibl>
+                  <identifier label="electronic" type="URI">https://www.cmme.org/database</identifier>
+                  <editor>Theodor Dumitrescu</editor>
+               </bibl>
+            </source>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application>
+               <name>CMME to MEI Converter</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+      <workList><!--
+    Incipit in CMME
+    --><work>
+            <title>Magnificat secundi toni</title>
+            <incip label="Incipit">
+               <incipText>
+                  <p/>
+               </incipText>
+            </incip>
+         </work>
+         <!--
+        VariantVersion(s) in CMME
+      --><!--A VariantVersion
+      --><work>
+            <title>Magnificat secundi toni</title>
+            <biblList>
+               <bibl>
+                  <identifier>Dumitrescu</identifier>
+                  <edition label="source">
+                     <name>BrusBR 5557</name>
+                     <identifier>23</identifier>
+                  </edition>
+               </bibl>
+            </biblList>
+            <extMeta><!-- 
+              A Bug in MEI prevents the document from validating if there are other elements in extMeta. 
+            --><!-- 
+              The CMME data is preserved in the commented xml elements below.
+            --><!--
+              Remove the comment tags to have it in xml.
+            
+              <Default />
+          --></extMeta>
+         </work>
+      </workList>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <pgHead>
+                     <rend halign="center" valign="middle" fontweight="bold" fontsize="100%">Magnificat secundi toni</rend>
+                     <rend halign="center" valign="middle" fontweight="bold" fontsize="150%">Anonymous</rend>
+                  </pgHead>
+                  <staffGrp>
+                     <staffDef n="1" notationtype="mensural" lines="5">
+                        <label>[Discantus]</label>
+                     </staffDef>
+                     <staffDef n="2" notationtype="mensural" lines="5">
+                        <label>[C]ontratenor</label>
+                     </staffDef>
+                     <staffDef n="3" notationtype="mensural" lines="5">
+                        <label>[T]enor</label>
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <staff n="1">
+                     <layer>
+                        <clef shape="C" line="2" oct="3"/>
+                        <orig>Agnificat</orig>
+                        <note dur="brevis" pname="c" oct="3">
+                           <verse>
+                              <syl>Ma</syl>
+                           </verse>
+                        </note>
+                        <note dur="brevis" pname="d" oct="3">
+                           <verse>
+                              <syl>gni</syl>
+                           </verse>
+                        </note>
+                        <note dur="brevis" pname="c" oct="3" lig="recta">
+                           <verse>
+                              <syl>fi</syl>
+                           </verse>
+                        </note>
+                        <note dur="brevis" pname="f" oct="3"/>
+                        <note dur="longa" pname="f" oct="3" stem.dir="down">
+                           <verse>
+                              <syl>cat</syl>
+                           </verse>
+                        </note>
+                        <barLine/>
+                     </layer>
+                  </staff>
+               </section>
+               <section>
+                  <staff n="1">
+                     <layer>
+                        <mensur sign="O" loc="4"/>
+                        <orig>Anima</orig>
+                        <note dur="brevis" num="4" numbase="1" pname="f" oct="3">
+                           <verse>
+                              <syl>A</syl>
+                           </verse>
+                        </note>
+                        <note dur="semibrevis" num="2" numbase="1" pname="f" oct="3">
+                           <verse>
+                              <syl>ni</syl>
+                           </verse>
+                        </note>
+                        <note dur="semibrevis" num="2" numbase="1" pname="g" oct="3"/>
+                        <note dur="minima" num="3" numbase="2" pname="a" oct="4">
+                           <verse>
+                              <syl>ma</syl>
+                           </verse>
+                        </note>
+                        <dot ploc="a" oloc="4"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="g" oct="3"/>
+                        <note dur="minima" num="1" numbase="1" pname="f" oct="3"/>
+                        <note dur="minima" num="1" numbase="1" pname="e" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="d" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="c" oct="3"/>
+                        <note dur="minima" num="1" numbase="1" pname="f" oct="3"/>
+                     </layer>
+                  </staff>
+                  <staff n="2">
+                     <layer>
+                        <clef shape="F" line="3" oct="2"/>
+                        <mensur sign="O" loc="6"/>
+                        <note dur="brevis" num="4" numbase="1" pname="c" oct="3">
+                           <verse>
+                              <syl>A</syl>
+                           </verse>
+                        </note>
+                        <note dur="minima" num="1" numbase="1" pname="b" oct="3">
+                           <verse>
+                              <syl>ni</syl>
+                           </verse>
+                        </note>
+                        <note dur="minima" num="1" numbase="1" pname="a" oct="3"/>
+                        <note dur="brevis" num="4" numbase="1" pname="c" oct="3">
+                           <verse>
+                              <syl>ma</syl>
+                           </verse>
+                        </note>
+                        <note dur="semibrevis" num="2" numbase="1" pname="a" oct="3"/>
+                        <accid accid="f" loc="7" ploc="b" oloc="3"/>
+                        <note dur="minima" num="3" numbase="2" pname="b" oct="3" accid="f"/>
+                        <dot ploc="b" oloc="3"/>
+                        <orig>Anima</orig>
+                        <note dur="semiminima" num="1" numbase="2" pname="a" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="f" oct="2" lig="recta" stem.dir="left"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="c" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="b" oct="3"/>
+                     </layer>
+                  </staff>
+                  <staff n="3">
+                     <layer>
+                        <clef shape="F" line="3" oct="2"/>
+                        <mensur sign="O" loc="4"/>
+                        <note dur="semibrevis" num="3" numbase="1" pname="f" oct="2">
+                           <verse>
+                              <syl>A</syl>
+                           </verse>
+                        </note>
+                        <dot ploc="b" oloc="3"/>
+                        <note dur="minima" num="1" numbase="1" pname="e" oct="2"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="d" oct="2"/>
+                        <orig>Anima mea do</orig>
+                        <note dur="semibrevis" num="2" numbase="1" pname="c" oct="2">
+                           <verse>
+                              <syl>ni</syl>
+                           </verse>
+                        </note>
+                        <note dur="brevis" num="4" numbase="1" pname="f" oct="2">
+                           <verse>
+                              <syl>ma</syl>
+                           </verse>
+                        </note>
+                        <note dur="semibrevis" num="2" numbase="1" pname="g" oct="2" lig="recta" stem.dir="left">
+                           <verse>
+                              <syl>me</syl>
+                           </verse>
+                        </note>
+                        <note dur="semibrevis" num="3" numbase="1" pname="a" oct="3"/>
+                        <dot ploc="b" oloc="3"/>
+                        <note dur="minima" num="1" numbase="1" pname="f" oct="2"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="g" oct="2"/>
+                        <note dur="brevis" num="4" numbase="1" pname="f" oct="2">
+                           <verse>
+                              <syl>a</syl>
+                           </verse>
+                        </note>
+                     </layer>
+                  </staff>
+               </section>
+               <section>
+                  <staff n="1">
+                     <layer>
+                        <note dur="longa" num="12" numbase="1" pname="d" oct="3" stem.dir="down"/>
+                     </layer>
+                  </staff>
+                  <staff n="2">
+                     <layer>
+                        <note dur="longa" num="12" numbase="1" pname="d" oct="2" stem.dir="down"/>
+                     </layer>
+                  </staff>
+                  <staff n="3">
+                     <layer/>
+                  </staff>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

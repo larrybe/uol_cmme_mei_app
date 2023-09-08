@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-Mensural.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-Mensural.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Salve regina</title>
+            <composer>Jean Lebrun</composer>
+            <editor>Marnix van Berchum</editor>
+            <respStmt>
+               <resp>Originally encoded by</resp>
+               <corpName role="encoder">The CMME Project</corpName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt/>
+         <sourceDesc>
+            <source>
+               <bibl>
+                  <identifier label="electronic" type="URI">https://www.cmme.org/database</identifier>
+                  <editor>Marnix van Berchum</editor>
+               </bibl>
+            </source>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application>
+               <name>CMME to MEI Converter</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+      <workList><!--
+    Incipit in CMME
+    --><work>
+            <title>Salve regina</title>
+            <incip label="Incipit">
+               <incipText>
+                  <p/>
+               </incipText>
+            </incip>
+         </work>
+         <!--
+        VariantVersion(s) in CMME
+      --></workList>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <pgHead>
+                     <rend halign="center" valign="middle" fontweight="bold" fontsize="100%">Salve regina</rend>
+                     <rend halign="center" valign="middle" fontweight="bold" fontsize="150%">Jean Lebrun</rend>
+                  </pgHead>
+                  <staffGrp>
+                     <staffDef n="1" notationtype="mensural" lines="5">
+                        <label>[Superius]</label>
+                     </staffDef>
+                     <staffDef n="2" notationtype="mensural" lines="5">
+                        <label>Contra.</label>
+                     </staffDef>
+                     <staffDef n="3" notationtype="mensural" lines="5">
+                        <label>Tenor.</label>
+                     </staffDef>
+                     <staffDef n="4" notationtype="mensural" lines="5">
+                        <label>Bassus</label>
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <staff n="1">
+                     <layer>
+                        <clef shape="C" line="1" oct="3"/>
+                        <accid accid="f" loc="6" ploc="b" oloc="4"/>
+                        <mensur sign="C" slash="1"/>
+                        <rest dur="semibrevis" num="2" numbase="1"/>
+                        <orig>VIta</orig>
+                        <note dur="semibrevis" num="6" numbase="2" pname="a" oct="4"/>
+                        <dot loc="2"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="g" oct="3"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="a" oct="4"/>
+                        <note dur="minima" num="1" numbase="1" pname="b" oct="4"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="a" oct="4"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="g" oct="3"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="f" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="e" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="d" oct="3"/>
+                        <rest dur="semibrevis" num="2" numbase="1"/>
+                        <note dur="longa" num="8" numbase="1" pname="a" oct="4" stem.dir="down"/>
+                        <clef shape="C" line="1" oct="3"/>
+                        <accid accid="f" loc="6" ploc="b" oloc="4"/>
+                     </layer>
+                  </staff>
+                  <staff n="2">
+                     <layer>
+                        <clef shape="C" line="3" oct="3"/>
+                        <accid accid="f" loc="3" ploc="b" oloc="3"/>
+                        <mensur sign="C" slash="1" loc="5"/>
+                        <rest dur="longa" num="8" numbase="1" spaces="2"/>
+                        <rest dur="longa" num="8" numbase="1" spaces="2"/>
+                        <orig>Vita</orig>
+                        <note dur="longa" num="8" numbase="1" pname="d" oct="3" lig="recta"/>
+                        <note dur="brevis" num="4" numbase="1" pname="c" oct="3" lig="recta"/>
+                        <note dur="brevis" num="4" numbase="1" pname="d" oct="3"/>
+                        <note dur="brevis" num="4" numbase="1" pname="g" oct="2"/>
+                        <rest dur="longa" num="8" numbase="1" spaces="2"/>
+                        <orig>dulcedo</orig>
+                        <note dur="semibrevis" num="6" numbase="2" pname="d" oct="3"/>
+                        <dot loc="1"/>
+                        <note dur="minima" num="1" numbase="1" pname="c" oct="3"/>
+                        <note dur="minima" num="3" numbase="2" pname="b" oct="3"/>
+                        <dot loc="1"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="g" oct="2"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="a" oct="3"/>
+                        <note dur="longa" num="8" numbase="1" pname="d" oct="3" stem.dir="down"/>
+                     </layer>
+                  </staff>
+                  <staff n="3">
+                     <layer>
+                        <clef shape="C" line="4" oct="3"/>
+                        <accid accid="f" loc="5" ploc="b" oloc="3"/>
+                        <mensur sign="C" slash="1" loc="5"/>
+                        <orig>Vita</orig>
+                        <note dur="longa" num="8" numbase="1" pname="d" oct="3" lig="recta"/>
+                        <note dur="brevis" num="4" numbase="1" pname="c" oct="3" lig="recta"/>
+                        <note dur="brevis" num="4" numbase="1" pname="d" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="g" oct="2"/>
+                        <rest dur="semibrevis" num="2" numbase="1"/>
+                        <rest dur="longa" num="8" numbase="1" spaces="2"/>
+                        <rest dur="longa" num="8" numbase="1" spaces="2"/>
+                        <note dur="semibrevis" num="6" numbase="2" pname="d" oct="3"/>
+                        <dot loc="2"/>
+                        <orig>dulcedo</orig>
+                        <note dur="minima" num="1" numbase="1" pname="c" oct="3"/>
+                        <note dur="minima" num="3" numbase="2" pname="b" oct="3"/>
+                        <dot loc="2"/>
+                        <note dur="longa" num="8" numbase="1" pname="f" oct="2" stem.dir="down"/>
+                     </layer>
+                  </staff>
+                  <staff n="4">
+                     <layer>
+<!-- Incompatibility: In cmme this F clef appears as a Frnd clef: <Appearance>Frnd</Appearance> -->
+<!----><clef shape="F" line="4" oct="2"/>
+                        <accid accid="f" loc="2" ploc="b" oloc="2"/>
+                        <mensur sign="C" slash="1"/>
+                        <rest dur="semibrevis" num="2" numbase="1"/>
+                        <orig>Vita</orig>
+                        <note dur="semibrevis" num="6" numbase="2" pname="d" oct="2"/>
+                        <dot loc="2"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="e" oct="2"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="f" oct="2"/>
+                        <note dur="minima" num="1" numbase="1" pname="g" oct="2"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="f" oct="2"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="e" oct="2"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="d" oct="2"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="a" oct="3"/>
+                        <note dur="brevis" num="4" numbase="1" pname="d" oct="2"/>
+                        <rest dur="semibrevis" num="2" numbase="1"/>
+                        <note dur="brevis" num="4" numbase="1" pname="a" oct="2" lig="recta"/>
+                        <note dur="brevis" num="4" numbase="1" pname="b" oct="2" lig="recta"/>
+                        <note dur="brevis" num="4" numbase="1" pname="g" oct="1" lig="recta"/>
+                        <note dur="longa" num="8" numbase="1" pname="d" oct="2" stem.dir="right"/>
+                     </layer>
+                  </staff>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

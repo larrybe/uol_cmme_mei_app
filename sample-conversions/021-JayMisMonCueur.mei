@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-Mensural.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-Mensural.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Jay mis mon cueur</title>
+            <composer>Anonymous</composer>
+            <editor>Theodor Dumitrescu</editor>
+            <respStmt>
+               <resp>Originally encoded by</resp>
+               <corpName role="encoder">The CMME Project</corpName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt/>
+         <sourceDesc>
+            <source>
+               <bibl>
+                  <identifier label="electronic" type="URI">https://www.cmme.org/database</identifier>
+                  <editor>Theodor Dumitrescu</editor>
+               </bibl>
+            </source>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application>
+               <name>CMME to MEI Converter</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+      <workList><!--
+        VariantVersion(s) in CMME
+      --><!--A VariantVersion
+      --><work>
+            <title>Jay mis mon cueur</title>
+            <biblList>
+               <bibl>
+                  <identifier>Dumitrescu</identifier>
+                  <edition label="source">
+                     <name>ParisBNF 9346</name>
+                     <identifier>179</identifier>
+                  </edition>
+               </bibl>
+            </biblList>
+            <extMeta><!-- 
+              A Bug in MEI prevents the document from validating if there are other elements in extMeta. 
+            --><!-- 
+              The CMME data is preserved in the commented xml elements below.
+            --><!--
+              Remove the comment tags to have it in xml.
+            
+              <Default />
+          --></extMeta>
+         </work>
+         <!--A VariantVersion
+      --><work>
+            <title>Jay mis mon cueur</title>
+            <biblList>
+               <bibl>
+                  <identifier>ParisBNF 9436</identifier>
+                  <edition label="source">
+                     <name>ParisBNF 9346</name>
+                     <identifier>179</identifier>
+                  </edition>
+               </bibl>
+            </biblList>
+         </work>
+      </workList>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <pgHead>
+                     <rend halign="center" valign="middle" fontweight="bold" fontsize="100%">Jay mis mon cueur</rend>
+                     <rend halign="center" valign="middle" fontweight="bold" fontsize="150%">Anonymous</rend>
+                  </pgHead>
+                  <staffGrp>
+                     <staffDef n="1" notationtype="mensural" lines="5">
+                        <label/>
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <staff n="1">
+                     <layer>
+                        <clef shape="C" line="4" oct="3"/>
+                        <accid accid="f" loc="5" ploc="b" oloc="3"/>
+                        <mensur sign="C" slash="1" loc="2"/>
+                        <rest dur="semibrevis" num="2" numbase="1"/>
+                        <rest dur="minima" num="1" numbase="1"/>
+                        <note dur="minima" num="1" numbase="1" pname="a" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="f" oct="2"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="g" oct="2"/>
+                        <note dur="semibrevis" num="3" numbase="1" pname="a" oct="3"/>
+                        <dot ploc="d" oloc="3"/>
+                        <note dur="minima" num="1" numbase="1" pname="g" oct="2"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="a" oct="3"/>
+                        <rest dur="minima" num="1" numbase="1"/>
+                        <note dur="minima" num="1" numbase="1" pname="a" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="c" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="c" oct="3"/>
+                        <note dur="minima" num="1" numbase="1" pname="b" oct="3" accid="f"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="a" oct="3"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="g" oct="2"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="a" oct="3"/>
+                        <note dur="longa" num="8" numbase="1" pname="g" oct="2"/>
+                        <note dur="brevis" num="4" numbase="1" pname="d" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="d" oct="3"/>
+                        <note dur="minima" num="1" numbase="1" pname="d" oct="3"/>
+                        <note dur="minima" num="1" numbase="1" pname="d" oct="3"/>
+                        <note dur="semibrevis" num="3" numbase="1" pname="c" oct="3"/>
+                        <dot ploc="d" oloc="3"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="b" oct="3" accid="f"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="a" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="g" oct="2"/>
+                        <rest dur="minima" num="1" numbase="1"/>
+                        <note dur="minima" num="1" numbase="1" pname="g" oct="2"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="c" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="d" oct="3"/>
+                        <note dur="minima" num="1" numbase="1" pname="c" oct="3"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="b" oct="3" accid="f"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="a" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="b" oct="3" accid="f"/>
+                        <note dur="longa" num="8" numbase="1" pname="a" oct="3" stem.dir="down"/>
+                        <note dur="brevis" num="4" numbase="1" pname="d" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="d" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="d" oct="3"/>
+                        <note dur="semibrevis" num="3" numbase="1" pname="c" oct="3"/>
+                        <dot ploc="d" oloc="3"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="b" oct="3" accid="f"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="a" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="g" oct="2"/>
+                        <rest dur="minima" num="1" numbase="1"/>
+                        <note dur="minima" num="1" numbase="1" pname="g" oct="2"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="c" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="c" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="a" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="a" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="f" oct="2"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="a" oct="3"/>
+                        <note dur="semibrevis" num="3" numbase="1" pname="g" oct="2"/>
+                        <dot ploc="d" oloc="3"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="f" oct="2"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="e" oct="2"/>
+                        <note dur="brevis" num="4" numbase="1" pname="d" oct="2"/>
+                        <note dur="brevis" num="4" numbase="1" pname="a" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="c" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="c" oct="3"/>
+                        <note dur="semibrevis" num="3" numbase="1" pname="d" oct="3"/>
+                        <dot ploc="d" oloc="3"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="c" oct="3"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="b" oct="3" accid="f"/>
+                        <note dur="semibrevis" num="3" numbase="1" pname="c" oct="3"/>
+                        <dot ploc="d" oloc="3"/>
+                        <note dur="minima" num="1" numbase="1" pname="d" oct="3"/>
+                        <note dur="minima" num="1" numbase="1" pname="b" oct="3" accid="f"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="a" oct="3"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="g" oct="2"/>
+                        <note dur="minima" num="1" numbase="1" pname="a" oct="3"/>
+                        <note dur="minima" num="1" numbase="1" pname="a" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="g" oct="2"/>
+                        <rest dur="minima" num="1" numbase="1"/>
+                        <note dur="minima" num="1" numbase="1" pname="a" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="f" oct="2"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="g" oct="2"/>
+                        <note dur="brevis" num="6" numbase="1" pname="a" oct="3"/>
+                        <dot ploc="d" oloc="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="c" oct="3"/>
+                        <note dur="semibrevis" num="3" numbase="1" pname="d" oct="3"/>
+                        <dot ploc="d" oloc="3"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="c" oct="3"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="b" oct="3" accid="f"/>
+                        <note dur="semibrevis" num="3" numbase="1" pname="c" oct="3"/>
+                        <dot ploc="d" oloc="3"/>
+                        <note dur="minima" num="1" numbase="1" pname="d" oct="3"/>
+                        <note dur="minima" num="1" numbase="1" pname="b" oct="3" accid="f"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="a" oct="3"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="g" oct="2"/>
+                        <note dur="minima" num="1" numbase="1" pname="a" oct="3"/>
+                        <note dur="minima" num="1" numbase="1" pname="a" oct="3"/>
+                        <note dur="longa" num="4" numbase="1" pname="g" oct="2" stem.dir="down"/>
+                        <barLine/>
+                     </layer>
+                  </staff>
+               </section>
+               <section>
+                  <staff n="1">
+                     <layer>
+                        <note dur="brevis" num="4" numbase="1" pname="d" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="d" oct="3"/>
+                        <note dur="minima" num="1" numbase="1" pname="d" oct="3"/>
+                        <note dur="minima" num="1" numbase="1" pname="d" oct="3"/>
+                        <note dur="semibrevis" num="3" numbase="1" pname="c" oct="3"/>
+                        <dot ploc="g" oloc="2"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="b" oct="3" accid="f"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="a" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="g" oct="2"/>
+                        <rest dur="minima" num="1" numbase="1"/>
+                        <note dur="minima" num="1" numbase="1" pname="g" oct="2"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="c" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="d" oct="3"/>
+                        <note dur="minima" num="1" numbase="1" pname="c" oct="3"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="b" oct="3" accid="f"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="a" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="b" oct="3" accid="f"/>
+                        <note dur="brevis" num="6" numbase="1" pname="a" oct="3"/>
+                        <dot ploc="g" oloc="2"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="c" oct="3"/>
+                        <note dur="brevis" num="4" numbase="1" pname="d" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="d" oct="3"/>
+                        <note dur="minima" num="1" numbase="1" pname="d" oct="3"/>
+                        <note dur="minima" num="1" numbase="1" pname="d" oct="3"/>
+                        <note dur="semibrevis" num="3" numbase="1" pname="c" oct="3"/>
+                        <dot ploc="g" oloc="2"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="b" oct="3" accid="f"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="a" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="g" oct="2"/>
+                        <rest dur="minima" num="1" numbase="1"/>
+                        <note dur="minima" num="1" numbase="1" pname="g" oct="2"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="c" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="d" oct="3"/>
+                        <note dur="minima" num="1" numbase="1" pname="b" oct="3" accid="f"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="a" oct="3"/>
+                        <note dur="semiminima" num="1" numbase="2" pname="g" oct="2"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="a" oct="3"/>
+                        <note dur="brevis" num="4" numbase="1" pname="g" oct="2"/>
+                        <barLine/>
+                        <rest dur="semibrevis" num="2" numbase="1"/>
+                        <rest dur="minima" num="1" numbase="1"/>
+                        <note dur="minima" num="1" numbase="1" pname="a" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="f" oct="2"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="g" oct="2"/>
+                        <note dur="semibrevis" num="3" numbase="1" pname="a" oct="3"/>
+                        <dot ploc="g" oloc="2"/>
+                        <note dur="minima" num="1" numbase="1" pname="g" oct="2"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="a" oct="3"/>
+                        <rest dur="minima" num="1" numbase="1"/>
+                        <note dur="minima" num="1" numbase="1" pname="a" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="c" oct="3"/>
+                        <note dur="semibrevis" num="2" numbase="1" pname="c" oct="3"/>
+                        <custos pname="b" oct="3"/>
+                     </layer>
+                  </staff>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
