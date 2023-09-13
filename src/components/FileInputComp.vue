@@ -1,8 +1,18 @@
 <script setup>
+/**
+ * FileInputComp.vue
+ * Component for uploading the CMME file
+ * 
+ * prop {function} fileInputFunc
+ * prop {function} setFileInput
+ * prop {function} clearDownload
+ * prop {function} setErrorState
+ */
 const props = defineProps([
     'fileInputFunc', 'setFileInput', 'clearDownload', 'setErrorState'
 ]);
 
+// Function for clicking the upload button
 function uploadBtnClick(){
     document.querySelector("#uploadInput").click();
 }

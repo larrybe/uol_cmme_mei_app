@@ -1,4 +1,11 @@
 <script setup>
+/**
+ * ErrorComp.vue
+ * Component for displaying error messages
+ * 
+ * prop {object} errorState
+ * prop {string} errorType
+ */
     const props = defineProps([
     'errorState', 'errorType'
     ]);

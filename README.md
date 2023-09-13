@@ -1,6 +1,8 @@
 # CMME to MEI File Converter
 
-An application to convert a CMME XML file to MEI.
+An application to convert a [CMME](https://cmme.org/) XML file to the [MEI](https://music-encoding.org/) format.
+
+Final project for the University of London [BSc Computer Science](https://www.london.ac.uk/courses/computer-science) programme.
 
 ## XSL File
 

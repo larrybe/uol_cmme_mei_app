@@ -1,4 +1,13 @@
 <script setup>
+/**
+ * ConvertComp.vue
+ * Component for the file conversion functionality
+ * 
+ * prop {object} fileInput contains the file input data
+ * prop {function} convert The data conversion function
+ * prop {function} setFileDownload 
+ * prop {function} setErrorState 
+ */
 const props = defineProps([
     "fileInput", "convert", "setFileDownload", "setErrorState"
     ]);
@@ -16,6 +25,5 @@ const props = defineProps([
 #convertComp{
     box-sizing: border-box;
     border-top: 2px solid var(--color-border)
-    /* outline: 2px solid firebrick; */
 }
 </style>

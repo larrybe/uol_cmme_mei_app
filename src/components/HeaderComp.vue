@@ -1,4 +1,8 @@
 <script>
+/**
+ * HeaderComp.vue
+ * Header for the application
+ */
 </script>
 
 <template>
@@ -13,6 +17,5 @@ header{
     box-sizing: border-box;
     padding: .5vw;
     grid-row: 1;
-    /* outline: 2px solid green; */
 }
 </style>

@@ -1,4 +1,10 @@
 <script setup>
+/**
+ * DownloadComp.vue
+ * The downloadble file component
+ * 
+ * prop {object} fileDownload Contains the converted file data
+ */
 const props = defineProps([
     "fileDownload"
     ]);
